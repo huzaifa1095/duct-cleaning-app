@@ -3,28 +3,25 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-screen h-screen relative">
-      <div className="h-15 w-full bg-red-600 absolute gap-x-5 flex justify-center items-center">
-        <h4 className="font-bold text-xl tracking-widest">
+      <div className="h-12 w-full bg-red-600 px-3 absolute gap-x-5 flex justify-center items-center">
+        <h4 className="font-bold text-md sm:text-xl tracking-widest">
          GET FREE INSPECTION!
         </h4>
-        <button className="btn btn-soft btn-primary">
+        <button className="btn btn-soft btn-primary h-8">
            BOOK NOW! 
         </button>
       </div>
-      <div className="hero bg-base-200 h-70 w-full pt-20">
+      <div className="hero bg-base-200 h-60 w-full pt-15">
         <div className="hero-content text-center w-full flex justify-center">
-          <div className="w-md">
+          <div className="w-full">
             <h1 className="text-5xl font-bold">Hello there</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
+            
           </div>
         </div>
       </div>
 
       <nav>
-        <div className="navbar bg-gradient-to-t from-blue-900 to-blue-800 shadow-sm">
+        <div className="navbar bg-gradient-to-t to-slate-700 from-slate-800 shadow-sm">
           <div className="navbar-start">
             <div className="dropdown ">
               <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
