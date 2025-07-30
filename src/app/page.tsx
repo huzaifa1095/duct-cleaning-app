@@ -11,10 +11,15 @@ export default function Home() {
            BOOK NOW! 
         </button>
       </div>
-      <div className="hero bg-base-200 h-60 w-full pt-15">
-        <div className="hero-content text-center w-full flex justify-center">
-          <div className="w-full">
-            <h1 className="text-5xl font-bold">Hello there</h1>
+      <div className="hero bg-base-200 h-60 w-full pt-12 bg-black">
+        <div className="hero-content text-center w-full h-full p-0">
+          <div className="relative w-full sm:w-[80%] h-full object-contain overflow-hidden">
+            <Image 
+              src="/logo.jpeg" 
+              alt="logo"
+              fill
+              className="object-cover -z-10"
+            />
             
           </div>
         </div>
