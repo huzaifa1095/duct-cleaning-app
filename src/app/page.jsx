@@ -5,20 +5,20 @@ import SlideShow from "@/components/SlideShow";
 export default function Home() {
   return (
     <div className="w-screen h-screen relative">
-      <div className="h-12 w-full bg-red-500 px-3 fixed z-10 gap-x-5 flex justify-center items-center">
+      <div className="h-12 w-full bg-red-500 px-3 fixed z-20 gap-x-5 flex justify-center items-center">
         <h4 className="font-bold text-md sm:text-xl tracking-widest">
           GET A FREE INSPECTION NOW!
         </h4>
         <button className="btn btn-soft btn-accent h-8">BOOK NOW!</button>
       </div>
-      <div className="hero h-60 w-full pt-12 bg-black">
+      <div className="hero h-70 w-full pt-12 bg-black">
         <div className="hero-content text-center w-full h-full p-0">
           <div className="relative w-full sm:w-[80%] h-full object-contain overflow-hidden">
             <Image
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="logo"
               fill
-              className="object-cover -z-10"
+              className="object-cover h-150 -z-10"
             />
           </div>
         </div>
@@ -26,8 +26,9 @@ export default function Home() {
 
       <nav>
         <div className="navbar bg-gradient-to-t to-slate-700 from-slate-800 shadow-sm">
-          <div className="navbar-start">
-            <div className="dropdown ">
+          <div className="navbar-start max-lg:justify-between max-lg:w-full">
+            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
                 role="button"
@@ -72,7 +73,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -97,26 +97,26 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
-            {/* <a className="btn">Button</a> */}
-          </div>
+          {/* <div className="navbar-end">
+            <a className="btn">Button</a>
+          </div> */}
         </div>
       </nav>
 
       <div
-        className="hero h-160 relative bg-transparent"
+        className="hero h-200 relative bg-transparent"
         // style={{
         //   backgroundImage:
         //     "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
         // }}
       >
-        <div className="absolute h-160 w-full object-cover overflow-hidden">
+        <div className="absolute -z-10 h-auto w-full object-cover overflow-hidden">
           <SlideShow />
         </div>
         <div className="hero-overlay"></div>
-        <div className="hero-content z-10 text-neutral-content text-center">
+        <div className="hero-content z-5 text-neutral-content text-center">
           <div className="w-full">
-            <h1 className="mb-5 text-5xl font-bold">
+            <h1 className="mb-5 text-5xl text-shadow-xl text-shadow-black font-bold">
               Commercial Duct and Vent Cleaning
             </h1>
             <p className="mb-5">
@@ -125,7 +125,7 @@ export default function Home() {
               et a id nisi.
             </p>
             <button className="btn btn-primary mr-8">Learn more</button>
-            <button className="btn btn-secondary">Request a quote</button>
+            <button className="btn btn-success">Request a quote</button>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,10 +16,9 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 const imgs = [
-  "https://swiperjs.com/demos/images/nature-1.jpg",
-  "https://swiperjs.com/demos/images/nature-2.jpg",
-  "https://swiperjs.com/demos/images/nature-3.jpg",
-  "https://swiperjs.com/demos/images/nature-4.jpg",
+  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Riverpoint-on-the-Connecticut-East-Hartford-CT.jpg",
+  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Sage-Park-Middle-School-Windsor-CT.jpg",
+  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Seabury-Bloomfield-CT.jpg",
 ];
 
 const SlideShow = () => {
@@ -40,7 +40,13 @@ const SlideShow = () => {
       >
         {imgs.map((img) => (
           <SwiperSlide>
-            <img className="mx-auto" src={img} />
+            <Image
+              width={1710}
+              height={800}
+              alt="slide"
+              className="mx-auto h-200 object-cover"
+              src={img}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
