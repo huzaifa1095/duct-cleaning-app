@@ -35,6 +35,15 @@ const SliderMultiple = () => {
         <SwiperSlide className="flex justify-center">
           <CardSlim />
         </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
+          <CardSlim />
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
+          <CardSlim />
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-center">
+          <CardSlim />
+        </SwiperSlide>
       </Swiper>
     </>
   );

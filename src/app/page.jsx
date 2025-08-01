@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-base-300 py-20 flex flex-row gap-x-10 justify-center w-full">
+      <div className="bg-base-300 py-20 flex flex-row gap-x-15 justify-center w-full">
         <CardSimple
           Img={
             "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
