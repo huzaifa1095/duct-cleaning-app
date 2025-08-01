@@ -5,12 +5,12 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className="sticky z-10 top-12">
-      <div className="navbar h-20 bg-gradient-to-t to-slate-700 from-slate-800 shadow-sm">
+      <div className="navbar h-20 bg-gradient-to-t from-slate-700 to-slate-800 shadow-sm">
         <div className="navbar-start max-lg:justify-between max-lg:w-full mr-2 lg:mx-10">
           <Link href={"/"} className="btn btn-ghost h-[70px] pb-1 ">
             <Image
-              src="/logo_v_black.png"
-              alt="logo_v_b"
+              src="/logo_notext.png"
+              alt="logo_notext"
               width={100}
               height={88}
               className="object-contain cursor-pointer"
