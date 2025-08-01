@@ -3,6 +3,8 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import SlideShow from "@/components/SlideShow";
 import Footer from "@/components/Footer";
+import CardSimple from "@/components/CardSimple";
+import SliderSection from "@/components/SliderSection";
 
 export default function Home() {
   return (
@@ -76,6 +78,38 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="bg-base-300 py-20 flex flex-row gap-x-10 justify-center w-full">
+        <CardSimple
+          Img={
+            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          }
+          Title={"Card Title"}
+          Para={
+            "A card component has a figure, a body part, and inside body there are title and actions parts"
+          }
+        />
+        <CardSimple
+          Img={
+            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          }
+          Title={"Card Title"}
+          Para={
+            "A card component has a figure, a body part, and inside body there are title and actions parts"
+          }
+        />
+        <CardSimple
+          Img={
+            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          }
+          Title={"Card Title"}
+          Para={
+            "A card component has a figure, a body part, and inside body there are title and actions parts"
+          }
+        />
+      </div>
+
+      <SliderSection />
 
       <Footer />
     </div>
