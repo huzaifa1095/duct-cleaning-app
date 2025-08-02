@@ -46,7 +46,7 @@ const Footer = () => {
             href="https://www.abdurr.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="link"
+            className="link link-primary"
           >
             abdurr.com
           </a>
