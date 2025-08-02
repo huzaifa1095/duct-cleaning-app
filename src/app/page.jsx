@@ -5,6 +5,7 @@ import SlideShow from "@/components/SlideShow";
 import Footer from "@/components/Footer";
 import CardSimple from "@/components/CardSimple";
 import SliderSection from "@/components/SliderSection";
+import NewsSlider from "@/components/NewsSlider";
 
 export default function Home() {
   return (
@@ -43,41 +44,24 @@ export default function Home() {
         <div className="absolute -z-10 h-auto w-full object-cover overflow-hidden">
           <SlideShow />
         </div>
-        <div className="hero-overlay"></div>
+        {/* <div className="hero-overlay"></div> */}
         <div className="hero-content z-5 text-neutral-content text-center">
           <div className="w-full">
-            <h1 className="mb-5 text-5xl text-shadow-xl text-shadow-black font-bold">
+            {/* <h1 className="mb-5 text-5xl text-shadow-xl text-shadow-black font-bold">
               Commercial Duct and Vent Cleaning
             </h1>
             <p className="mb-5">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
-            </p>
+            </p> */}
             <button className="btn btn-primary mr-8">Learn more</button>
             <button className="btn btn-success">Request a quote</button>
           </div>
         </div>
       </div>
 
-      <div className="hero bg-base-200 h-100 ">
-        <div className="hero-content flex-col px-30 lg:flex-row-reverse">
-          <img
-            src="https://www.ductandvent.com/Data/components/home-first-feature/US-Naval-Ship.jpg"
-            className="w-md rounded-lg shadow-2xl"
-          />
-
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
+      <NewsSlider />
 
       <div className="bg-base-300 py-20 flex flex-row gap-x-15 justify-center w-full">
         <CardSimple

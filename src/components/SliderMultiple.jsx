@@ -17,9 +17,11 @@ const SliderMultiple = () => {
       <Swiper
         slidesPerView={4}
         spaceBetween={20}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
+        loop={true}
         modules={[Pagination, Navigation]}
         className="mySwiper h-full"
       >

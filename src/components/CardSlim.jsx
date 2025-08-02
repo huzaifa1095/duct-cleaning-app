@@ -2,7 +2,7 @@ import React from "react";
 
 const CardSlim = () => {
   return (
-    <div className="card bg-base-100 w-80 shadow-sm">
+    <div className="card bg-base-100 w-80 shadow-sm mx-auto">
       <figure className="px-10 pt-10">
         <img
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
