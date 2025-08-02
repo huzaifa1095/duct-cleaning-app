@@ -29,7 +29,7 @@ const items = [
 
 const NewsSlider = () => {
   return (
-    <div className="px-60 bg-base-200">
+    <div className="lg:px-60 bg-base-200">
       <Swiper
         navigation={true}
         pagination={{

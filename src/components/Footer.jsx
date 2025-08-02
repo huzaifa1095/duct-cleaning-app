@@ -39,8 +39,19 @@ const Footer = () => {
         <a className="link link-hover">Cookie policy</a>
       </nav>
 
-      <div className="absolute w-full flex justify-center bottom-0 font-bold bg-stone-300 text-black dark:bg-stone-900 dark:text-white h-4 text-[0.6rem]">
-        Website produced by abdurr.com.
+      <div className="absolute w-full flex justify-center bottom-0 font-bold bg-stone-300 text-black dark:bg-stone-900 dark:text-white text-[0.6rem] ">
+        <p>
+          Website produced by{" "}
+          <a
+            href="https://www.abdurr.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            abdurr.com
+          </a>
+          .
+        </p>
       </div>
     </footer>
   );
