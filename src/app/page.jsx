@@ -6,12 +6,18 @@ import SliderSection from "@/components/SliderSection";
 import NewsSlider from "@/components/NewsSlider";
 import HeroSlideShow from "@/components/HeroSlideShow";
 import CardSection from "@/components/CardSection";
+import Mission from "@/components/Mission";
 
 export default function Home() {
   return (
     <div>
       <div className="h-12 w-full bg-red-500 px-3 fixed z-20 gap-x-5 flex justify-center items-center">
-        <h4 className="font-bold text-md sm:text-xl tracking-widest">
+        <h4 className="font-bold text-md sm:text-xl tracking-widest flex items-center gap-2">
+          {/* <div className="inline-grid *:[grid-area:1/1]"> */}
+          <div className="flex justify-center items-center">
+            <div className="status absolute status-success status-xl animate-ping"></div>
+            <div className="status status-info status-md"></div>
+          </div>
           GET A FREE INSPECTION NOW!
         </h4>
         <button className="btn btn-soft btn-accent h-8">BOOK NOW!</button>
@@ -33,13 +39,10 @@ export default function Home() {
       <Navbar />
 
       <HeroSlideShow />
-
       <NewsSlider />
-
       <CardSection />
-
       <SliderSection />
-
+      <Mission />
       <Footer />
     </div>
   );
