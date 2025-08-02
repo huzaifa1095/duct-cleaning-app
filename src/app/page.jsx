@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 import Navbar from "@/components/Navbar";
-import SlideShow from "@/components/SlideShow";
 import Footer from "@/components/Footer";
-import CardSimple from "@/components/CardSimple";
 import SliderSection from "@/components/SliderSection";
 import NewsSlider from "@/components/NewsSlider";
+import HeroSlideShow from "@/components/HeroSlideShow";
+import CardSection from "@/components/CardSection";
 
 export default function Home() {
   return (
@@ -30,68 +30,13 @@ export default function Home() {
       </div>
       <div className="w-full h-70 bg-transparent"></div>
 
-      {/* <div className="w-100 h-100 bg-amber-900 sticky z-10 top-0"></div> */}
-
       <Navbar />
 
-      <div
-        className="hero h-200 relative bg-transparent"
-        // style={{
-        //   backgroundImage:
-        //     "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-        // }}
-      >
-        <div className="absolute -z-10 h-auto w-full object-cover overflow-hidden">
-          <SlideShow />
-        </div>
-        {/* <div className="hero-overlay"></div> */}
-        <div className="hero-content z-5 text-neutral-content text-center">
-          <div className="w-full">
-            {/* <h1 className="mb-5 text-5xl text-shadow-xl text-shadow-black font-bold">
-              Commercial Duct and Vent Cleaning
-            </h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p> */}
-            <button className="btn btn-primary mr-8">Learn more</button>
-            <button className="btn btn-success">Request a quote</button>
-          </div>
-        </div>
-      </div>
+      <HeroSlideShow />
 
       <NewsSlider />
 
-      <div className="bg-base-300 py-20 flex flex-row gap-x-15 justify-center w-full">
-        <CardSimple
-          Img={
-            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          }
-          Title={"Card Title"}
-          Para={
-            "A card component has a figure, a body part, and inside body there are title and actions parts"
-          }
-        />
-        <CardSimple
-          Img={
-            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          }
-          Title={"Card Title"}
-          Para={
-            "A card component has a figure, a body part, and inside body there are title and actions parts"
-          }
-        />
-        <CardSimple
-          Img={
-            "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          }
-          Title={"Card Title"}
-          Para={
-            "A card component has a figure, a body part, and inside body there are title and actions parts"
-          }
-        />
-      </div>
+      <CardSection />
 
       <SliderSection />
 
