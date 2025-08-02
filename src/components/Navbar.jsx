@@ -6,14 +6,14 @@ const Navbar = () => {
   return (
     <nav className="sticky z-10 top-12">
       <div className="navbar h-20 bg-gradient-to-t from-slate-700 to-slate-800 shadow-sm">
-        <div className="navbar-start max-lg:justify-between max-lg:w-full mr-2 lg:mx-10">
-          <Link href={"/"} className="btn btn-ghost h-[70px] pb-1 ">
+        <div className="navbar-start lg:w-auto max-lg:justify-between max-lg:w-full mr-2 max-lg:mx-10">
+          <Link href={"/"} className="btn btn-ghost h-[70px] pb-1 lg:ml-5">
             <Image
               src="/logo_notext.png"
               alt="logo_notext"
               width={100}
               height={88}
-              className="object-contain cursor-pointer"
+              className="object-contain cursor-pointer z-10"
             />
           </Link>
           <div className="dropdown dropdown-end">
@@ -58,26 +58,66 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center hidden lg:flex absolute w-full justify-center">
+          <ul className="flex flex-row px-1 gap-5">
             <li className="text-white text-lg">
-              <a>Item 1</a>
+              <a className="btn btn-outline border-0 text-lg m-1">Home</a>
             </li>
             <li>
-              <details>
-                <summary className="text-white text-lg">Parent</summary>
-                <ul className="p-2 z-10 w-60">
+              <div className="dropdown dropdown-hover dropdown-start">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-outline border-0 text-lg m-1 z-20"
+                >
+                  Residential
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
+                >
                   <li>
-                    <a>Submenu 1</a>
+                    <a>Duct Cleaning</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Referral & Affiliate Rewards Program</a>
+                  </li>
+                  <li>
+                    <a>Dryer Vent Cleaning</a>
                   </li>
                 </ul>
-              </details>
+              </div>
             </li>
-            <li className="text-white text-lg">
-              <a>Item 3</a>
+            <li>
+              <div className="dropdown dropdown-hover dropdown-start">
+                <a
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-outline border-0 text-lg m-1 z-10"
+                >
+                  Commercial
+                </a>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
+                >
+                  <li>
+                    <a>Dryer Vent Cleaning</a>
+                  </li>
+                  <li>
+                    <a>System inspection</a>
+                  </li>
+                  <li>
+                    <a>Coil Cleaning</a>
+                  </li>
+                  <li>
+                    <a>Exhaust Cleaning</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className="text-white">
+              <a className="btn btn-outline border-0 text-lg m-1">Contact</a>
             </li>
           </ul>
         </div>
