@@ -40,9 +40,9 @@ export default function Home() {
 
       <HeroSlideShow />
       <NewsSlider />
+      <Mission />
       <CardSection />
       <SliderSection />
-      <Mission />
       <Footer />
     </div>
   );
