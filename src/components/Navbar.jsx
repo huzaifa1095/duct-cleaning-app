@@ -46,24 +46,44 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 z-1 rounded-box mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content gap-y-2 bg-base-100 z-1 rounded-box mt-3 w-52 pb-6 p-4 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Home</a>
               </li>
               <li>
-                <a>Parent</a>
+                <a>Residential</a>
                 <ul className="p-2">
                   <li>
-                    <a>lol boy</a>
+                    <a>Duct Cleaning</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Referral & Affiliate Rewards Program</a>
+                  </li>
+                  <li>
+                    <a>Dryer Vent Cleaning</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Commercial</a>
+                <ul className="p-2">
+                  <li>
+                    <a>Dryer Vent Cleaning</a>
+                  </li>
+                  <li>
+                    <a>System inspection</a>
+                  </li>
+                  <li>
+                    <a>Coil Cleaning</a>
+                  </li>
+                  <li>
+                    <a>Exhaust Cleaning</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Contact</a>
               </li>
             </ul>
           </div>

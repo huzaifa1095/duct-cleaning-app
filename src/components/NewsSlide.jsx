@@ -1,15 +1,18 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 const NewsSlide = ({ Img, Title, Para, Button }) => {
   return (
-    <div className="hero bg-base-200 h-150 lg:h-100 ">
-      <div className="hero-content flex-col lg:px-30 lg:flex-row-reverse">
+    <div className="hero bg-base-200 h-350 md:h-250  ">
+      <div className="hero-content flex-col px-10 lg:px-30 xl:flex-row-reverse">
         <img src={Img} className="w-md rounded-lg shadow-2xl" />
 
         <div>
           <h1 className="text-xl lg:text-5xl font-bold">{Title}</h1>
-          <p className="py-6">{Para}</p>
-          <button className="btn btn-primary">{Button}</button>
+          <div className="prose prose-lg lg:prose-xl">
+            <ReactMarkdown>{Para}</ReactMarkdown>
+          </div>
+          <button className="btn btn-primary mt-5">{Button}</button>
         </div>
       </div>
     </div>

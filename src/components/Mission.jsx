@@ -23,7 +23,7 @@ const Mission = () => {
           ensure thorough, efficient cleaning.
         </p>
 
-        <h3 className="text-xl max-md:text-balance font-bold pt-2 pb-1 tracking-wider">
+        <h3 className="text-2xl max-md:text-balance font-bold pt-2 pb-1 tracking-wider">
           Improving Lives Through Cleaner Air
         </h3>
         <div className="gap-y-5 flex flex-col md:mx-40">

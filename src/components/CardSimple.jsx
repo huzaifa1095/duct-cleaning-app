@@ -9,8 +9,8 @@ const CardSimple = ({ Img, Title, Para }) => {
       <div className="card-body">
         <h2 className="card-title">{Title}</h2>
         <p>{Para}</p>
-        <div className="card-actions justify-end">
-          {/* <button className="btn btn-primary">Buy Now</button> */}
+        <div className="card-actions justify-end mt-2">
+          <button className="btn btn-primary lg:hidden">Book Now</button>
         </div>
       </div>
     </div>

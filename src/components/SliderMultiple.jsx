@@ -18,7 +18,7 @@ const SliderMultiple = () => {
         breakpoints={{
           0: { slidesPerView: 1 }, // Mobile
           640: { slidesPerView: 2 }, // iPad / tablets
-          1024: { slidesPerView: 4 }, // Desktop
+          1024: { slidesPerView: 3 }, // Desktop
         }}
         spaceBetween={20}
         navigation={true}

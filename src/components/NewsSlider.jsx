@@ -14,28 +14,58 @@ import { Navigation, Pagination } from "swiper/modules";
 
 const items = [
   {
-    Img: "https://www.ductandvent.com/Data/components/home-first-feature/US-Naval-Ship.jpg",
+    Img: "/section_1_slideshow/pic1.jpg",
     Title: "Box Office News! 1",
-    Para: "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
-    Button: "Get Started",
+    Para: `
+### DuctsandVents is Breaking Records Across America!
+From coast to coast, **DuctsandVents** is making _clean air history_!  
+Here's what's lighting up the charts:
+
+- 🌟 **Over 50,000 HVAC Systems Cleaned Nationwide**
+- 📍 **Active in 30+ Major States – and expanding fast**
+- 🏆 **Top-rated NADCA-Certified Crews in the U.S.**
+- 🏢 **Trusted by Government Agencies, Hospitals & Fortune 500 Companies**
+- ⭐ **98% Customer Satisfaction & 5-Star Service Ratings**
+
+This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
+
+**Book your service today** and be part of the cleanest success story in America!
+`,
+    Button: "Book Now!",
   },
   {
-    Img: "https://www.ductandvent.com/Data/components/home-first-feature/US-Naval-Ship.jpg",
+    Img: "/section_1_slideshow/pic2.jpg",
     Title: "Box Office News! 2",
-    Para: "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
-    Button: "Get Started",
+    Para: `
+### DuctsandVents is Breaking Records Across America!
+
+From coast to coast, **DuctsandVents** is making _clean air history_!  
+Here's what's lighting up the charts:
+
+- 🌟 **Over 50,000 HVAC Systems Cleaned Nationwide**
+- 📍 **Active in 30+ Major States – and expanding fast**
+- 🏆 **Top-rated NADCA-Certified Crews in the U.S.**
+- 🏢 **Trusted by Government Agencies, Hospitals & Fortune 500 Companies**
+- ⭐ **98% Customer Satisfaction & 5-Star Service Ratings**
+
+This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
+
+**Book your service today** and be part of the cleanest success story in America!
+
+    `,
+    Button: "Book Now!",
   },
 ];
 
 const NewsSlider = () => {
   return (
-    <div className=" md:px-60 bg-base-200">
+    <div className="lg:px-30 bg-base-200">
       <Swiper
         navigation={true}
         pagination={{
           clickable: true,
         }}
-        // loop={true}
+        loop={true}
         modules={[Navigation, Pagination]}
         className="mySwiper"
       >
