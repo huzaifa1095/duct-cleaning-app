@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 const NewsSlide = ({ Img, Title, Para, Button }) => {
   return (
     <div className="hero bg-base-200 h-350 md:h-250  ">
-      <div className="hero-content flex-col px-10 lg:px-30 xl:flex-row-reverse">
+      <div className="hero-content flex-col px-10 md:px-0 xl:px-20 xl:flex-row-reverse">
         <img src={Img} className="w-md rounded-lg shadow-2xl" />
 
         <div>

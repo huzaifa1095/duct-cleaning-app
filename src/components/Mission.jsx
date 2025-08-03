@@ -39,7 +39,7 @@ const Mission = () => {
               Pennsylvania, South Carolina, Tennessee, Vermont, Virginia,
               Washington, West Virginia
             </strong>
-            . Our services extend nationwide. You can find detailed service
+            ; our services extend nationwide. You can find detailed service
             areas in the “Markets” section of our website, powered by Google
             Maps.
           </p>

@@ -59,7 +59,7 @@ This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
 
 const NewsSlider = () => {
   return (
-    <div className="lg:px-30 bg-base-200">
+    <div className="xl:px-20 bg-base-200">
       <Swiper
         navigation={true}
         pagination={{
