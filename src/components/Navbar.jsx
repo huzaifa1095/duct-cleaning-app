@@ -6,14 +6,24 @@ const Navbar = () => {
   return (
     <nav className="sticky z-10 top-12">
       <div className="navbar h-20 bg-gradient-to-t from-slate-700 to-slate-800 shadow-sm">
-        <div className="navbar-start lg:w-auto max-lg:justify-between max-lg:w-full mr-2 max-lg:mx-10">
-          <Link href={"/"} className="btn btn-ghost h-[70px] pb-1 lg:ml-5">
+        <div className="navbar-start lg:w-auto max-lg:justify-between max-lg:w-full mr-2 ml-0 md:mx-10">
+          <Link
+            href={"/"}
+            className="flex items-center justify-center btn btn-ghost h-[70px] w-50 lg:pb-1 lg:ml-5"
+          >
             <Image
               src="/logo_notext.png"
               alt="logo_notext"
               width={100}
               height={88}
-              className="object-contain cursor-pointer z-10"
+              className="object-contain cursor-pointer z-10 max-lg:hidden"
+            />
+            <Image
+              src="/logo.png"
+              alt="logo_notext"
+              width={500}
+              height={88}
+              className="object-contain cursor-pointer z-10 lg:hidden"
             />
           </Link>
           <div className="dropdown dropdown-end">
