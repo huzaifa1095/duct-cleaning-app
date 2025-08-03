@@ -3,7 +3,7 @@ import React from "react";
 const Mission = () => {
   return (
     <div className="hero bg-base-200 py-10">
-      <div className="hero-content flex-col text-center">
+      <div className="hero-content flex-col text-center px-4">
         <div className="">
           <h1 className="text-5xl font-bold">Ducts & Vents</h1>
         </div>
@@ -23,7 +23,7 @@ const Mission = () => {
           ensure thorough, efficient cleaning.
         </p>
 
-        <h3 className="text-xl font-bold pt-2 pb-1 tracking-wider">
+        <h3 className="text-xl max-md:text-balance font-bold pt-2 pb-1 tracking-wider">
           Improving Lives Through Cleaner Air
         </h3>
         <div className="gap-y-5 flex flex-col md:mx-40">

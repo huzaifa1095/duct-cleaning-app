@@ -15,7 +15,11 @@ const SliderMultiple = () => {
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        breakpoints={{
+          0: { slidesPerView: 1 }, // Mobile
+          640: { slidesPerView: 2 }, // iPad / tablets
+          1024: { slidesPerView: 4 }, // Desktop
+        }}
         spaceBetween={20}
         navigation={true}
         pagination={{
