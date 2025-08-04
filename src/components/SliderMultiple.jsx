@@ -19,6 +19,7 @@ const SliderMultiple = () => {
           0: { slidesPerView: 1 }, // Mobile
           640: { slidesPerView: 2 }, // iPad / tablets
           1024: { slidesPerView: 3 }, // Desktop
+          1600: { slidesPerView: 4 }, //Bigger Desktop
         }}
         spaceBetween={20}
         navigation={true}

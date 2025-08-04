@@ -65,9 +65,10 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li>
-                <a>Commercial</a>
-                <ul className="p-2">
+              <details>
+                <summary>Commercial</summary>
+
+                <ul className="p-2 ml-2">
                   <li>
                     <a>Dryer Vent Cleaning</a>
                   </li>
@@ -81,7 +82,8 @@ const Navbar = () => {
                     <a>Exhaust Cleaning</a>
                   </li>
                 </ul>
-              </li>
+              </details>
+
               <li>
                 <a>Contact</a>
               </li>

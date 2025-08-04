@@ -18,7 +18,7 @@ const Footer = () => {
             <br />
             From every state, we clean it straight.
           </p>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
         </aside>
         <nav>
           <h6 className="footer-title">Services</h6>
@@ -99,7 +99,7 @@ const Footer = () => {
             <br />
             From every state, we clean it straight.
           </p>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
         </aside>
         <nav>
           <div className="grid grid-flow-col gap-4">
