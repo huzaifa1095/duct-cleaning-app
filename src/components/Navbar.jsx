@@ -49,19 +49,25 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content gap-y-2 bg-base-100 z-1 rounded-box mt-3 w-52 pb-6 p-4 shadow"
             >
               <li>
-                <a>Home</a>
+                <Link href={"/"}>Home</Link>
               </li>
               <li>
                 <a>Residential</a>
                 <ul className="p-2">
                   <li>
-                    <a>Duct Cleaning</a>
+                    <Link href={"/residential/duct-cleaning"}>
+                      Duct Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>Referral & Affiliate Rewards Program</a>
+                    <Link href={"/residential/referral-program"}>
+                      Referral & Affiliate Rewards Program
+                    </Link>
                   </li>
                   <li>
-                    <a>Dryer Vent Cleaning</a>
+                    <Link href={"/residential/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -70,16 +76,24 @@ const Navbar = () => {
 
                 <ul className="p-2 ml-2">
                   <li>
-                    <a>Dryer Vent Cleaning</a>
+                    <Link href={"/commercial/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>System inspection</a>
+                    <Link href={"/commercial/system-inspection"}>
+                      System inspection
+                    </Link>
                   </li>
                   <li>
-                    <a>Coil Cleaning</a>
+                    <Link href={"/commercial/coil-cleaning"}>
+                      Coil Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>Exhaust Cleaning</a>
+                    <Link href={"/commercial/exhaust-cleaning"}>
+                      Exhaust Cleaning
+                    </Link>
                   </li>
                 </ul>
               </details>
@@ -93,7 +107,9 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex absolute w-full justify-center">
           <ul className="flex flex-row px-1 gap-5">
             <li className="text-white text-lg">
-              <a className="btn btn-outline border-0 text-lg m-1">Home</a>
+              <Link href={"/"} className="btn btn-outline border-0 text-lg m-1">
+                Home
+              </Link>
             </li>
             <li>
               <div className="dropdown dropdown-hover dropdown-start">
@@ -109,13 +125,19 @@ const Navbar = () => {
                   className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
                 >
                   <li>
-                    <a>Duct Cleaning</a>
+                    <Link href={"/residential/duct-cleaning"}>
+                      Duct Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>Referral & Affiliate Rewards Program</a>
+                    <Link href={"/residential/referral-program"}>
+                      Referral & Affiliate Rewards Program
+                    </Link>
                   </li>
                   <li>
-                    <a>Dryer Vent Cleaning</a>
+                    <Link href={"/residential/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -134,16 +156,24 @@ const Navbar = () => {
                   className="dropdown-content menu bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm"
                 >
                   <li>
-                    <a>Dryer Vent Cleaning</a>
+                    <Link href={"/commercial/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>System inspection</a>
+                    <Link href={"/commercial/system-inspection"}>
+                      System inspection
+                    </Link>
                   </li>
                   <li>
-                    <a>Coil Cleaning</a>
+                    <Link href={"/commercial/coil-cleaning"}>
+                      Coil Cleaning
+                    </Link>
                   </li>
                   <li>
-                    <a>Exhaust Cleaning</a>
+                    <Link href={"/commercial/exhaust-cleaning"}>
+                      Exhaust Cleaning
+                    </Link>
                   </li>
                 </ul>
               </div>
