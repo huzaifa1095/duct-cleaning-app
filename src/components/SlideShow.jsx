@@ -16,10 +16,9 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 const imgs = [
-  "/section_1_slideshow/pic01.jpg",
-  "/section_1_slideshow/pic02.jpg",
-  "/section_1_slideshow/pic03.jpg",
-  "/section_1_slideshow/pic04.jpg",
+  "/section_1_slideshow/pic2.jpg",
+  "/section_1_slideshow/pic3.jpg",
+  "/section_1_slideshow/pic1.jpg",
 ];
 
 const SlideShow = () => {
