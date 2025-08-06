@@ -16,9 +16,10 @@ import "swiper/css/pagination";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 const imgs = [
-  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Riverpoint-on-the-Connecticut-East-Hartford-CT.jpg",
-  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Sage-Park-Middle-School-Windsor-CT.jpg",
-  "https://www.ductandvent.com/Data/components/sliderImages/Duct-and-Vent-Cleaning-Seabury-Bloomfield-CT.jpg",
+  "/section_1_slideshow/pic01.jpg",
+  "/section_1_slideshow/pic02.jpg",
+  "/section_1_slideshow/pic03.jpg",
+  "/section_1_slideshow/pic04.jpg",
 ];
 
 const SlideShow = () => {

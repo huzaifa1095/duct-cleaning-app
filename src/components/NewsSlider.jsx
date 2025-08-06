@@ -14,7 +14,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 const items = [
   {
-    Img: "/section_1_slideshow/pic1.jpg",
+    Img: "/news/pic1.jpg",
     Title: "Box Office News! 1",
     Para: `
 ### DuctsandVents is Breaking Records Across America!
@@ -34,7 +34,7 @@ This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
     Button: "Book Now!",
   },
   {
-    Img: "/section_1_slideshow/pic2.jpg",
+    Img: "/news/pic2.jpg",
     Title: "Box Office News! 2",
     Para: `
 ### DuctsandVents is Breaking Records Across America!
