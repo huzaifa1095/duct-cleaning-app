@@ -60,13 +60,13 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/residential/referral-program"}>
-                      Referral & Affiliate Rewards Program
+                    <Link href={"/residential/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/residential/dryer-vent-cleaning"}>
-                      Dryer Vent Cleaning
+                    <Link href={"/residential/referral-program"}>
+                      Referral & Affiliate Rewards Program
                     </Link>
                   </li>
                 </ul>
@@ -130,13 +130,13 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/residential/referral-program"}>
-                      Referral & Affiliate Rewards Program
+                    <Link href={"/residential/dryer-vent-cleaning"}>
+                      Dryer Vent Cleaning
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/residential/dryer-vent-cleaning"}>
-                      Dryer Vent Cleaning
+                    <Link href={"/residential/referral-program"}>
+                      Referral & Affiliate Rewards Program
                     </Link>
                   </li>
                 </ul>

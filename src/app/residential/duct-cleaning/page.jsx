@@ -1,7 +1,30 @@
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const Para = `
+## How Clean Is the Air You Breathe?
+
+Your home’s air may be circulating more than just comfort — it could also be moving dust, bacteria, mold, and allergens. At **DuctsandVents**, we help you breathe cleaner, healthier air by professionally cleaning your HVAC ducts and vents.
+
+## ✅ What Our Service Does:
+- Removes **dust, mold, bacteria, and mites** from your heating and cooling system
+- Reduces **asthma and allergy symptoms** through cleaner airflow
+- Improves **HVAC efficiency**, lowering your energy bills
+- Decreases **indoor dust buildup**, making your home cleaner
+- Creates a safer, healthier environment for your family
+
+## Certified Professionals You Can Trust
+Our technicians are trained in accordance with **OSHA safety standards** and **IAQA (Indoor Air Quality Association)** best practices to ensure your home’s air quality is restored safely and effectively.
+
+---
+
+📞 **Contact our Air Duct & Vent Cleaning experts today:**  
+**1-786-952-3349**  
+Or book online and take a deep breath of truly clean air.
+`;
 
 export default function ResidentialDuctCleaning() {
   return (
@@ -33,20 +56,18 @@ export default function ResidentialDuctCleaning() {
 
       <Navbar />
 
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen py-10">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="w-md rounded-lg shadow-2xl"
           />
           <div>
             <h1 className="text-5xl font-bold">Residential Duct Cleaning</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+            <div className="prose prose-sm mr-20 m-5 ml-0">
+              <ReactMarkdown>{Para}</ReactMarkdown>
+            </div>
+            <button className="btn btn-primary">Get Free Estimate</button>
           </div>
         </div>
       </div>

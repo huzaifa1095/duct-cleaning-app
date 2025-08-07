@@ -33,22 +33,24 @@ export default function ResidentialDuctCleaning() {
 
       <Navbar />
 
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">
-              Customer Referral & Affiliate Rewards Program
-            </h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+      <h1 className="text-5xl font-bold text-center bg-base-200 py-10 pb-4">
+        Customer Referral & Affiliate Rewards Program
+      </h1>
+
+      <div className="hero bg-base-200 h-auto pb-10">
+        <div className="hero-content flex-col ">
+          <img src="/j.webp" className="w-lg rounded-lg shadow-2xl" />
+          <div className="flex justify-center items-center flex-col">
+            <p className="py-6 pb-1 text-xl font-bold">
+              RECEIVE A $25.00 CHECK AFTER WORK IS COMPLETED. FOR EACH CUSTOMER
+              REFERRED
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <p className="py-6 pt-2 text-sm font-bold w-md text-center">
+              This Offer Can Not Be Combined With Any Other Promotional Offer Or
+              Discount. This Offer Applies To Our Standard Duct Cleaning Prices.
+              One Certificate Valid Per Service.
+            </p>
+            <button className="btn btn-primary w-xs">Apply now</button>
           </div>
         </div>
       </div>
