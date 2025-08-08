@@ -11,6 +11,44 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
+const awards = [
+  {
+    Img: "/awards/chamber-of-commerce.png",
+    Title: "Chamber Of Commerce",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/nadca.png",
+    Title: "NADCA",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/indoor-air.png",
+    Title: "Indoor Air Quality Association Inc.",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/lead-safe-certified-firm.png",
+    Title: "United States Environmental Protection Agency",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/iaqa-certification.jpg",
+    Title: "indoor air quality association",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/acca.png",
+    Title: "Air Conditioning Contractors of America Association, Inc.",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+  {
+    Img: "/awards/osha.png",
+    Title: "Occupational Safety and Health Administration",
+    Para: "In this structure, a non-essential clause is simply inserted between the subject and the verb to distract from the fact that the subject is singular and the verb is plural or vice versa.",
+  },
+];
+
 const SliderMultiple = () => {
   return (
     <>
@@ -30,27 +68,11 @@ const SliderMultiple = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper h-full"
       >
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <CardSlim />
-        </SwiperSlide>
+        {awards.map((award) => (
+          <SwiperSlide className="flex justify-center">
+            <CardSlim Img={award.Img} Title={award.Title} Para={award.Para} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

@@ -15,7 +15,7 @@ import { Navigation, Pagination } from "swiper/modules";
 const items = [
   {
     Img: "/news/pic1.jpg",
-    Title: "Box Office News! 1",
+    Title: "Box Office News!",
     Para: `
 ### DuctsandVents is Breaking Records Across America!
 From coast to coast, **DuctsandVents** is making _clean air history_!  
@@ -35,22 +35,23 @@ This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
   },
   {
     Img: "/news/pic2.jpg",
-    Title: "Box Office News! 2",
+    Title: "Box Office News!",
     Para: `
-### DuctsandVents is Breaking Records Across America!
+# DuctsandVents Reaches a New Milestone in Clean Air Excellence!
 
-From coast to coast, **DuctsandVents** is making _clean air history_!  
-Here's what's lighting up the charts:
+## ✅ Recent Highlights
+- 🏛️ **U.S. Federal Courthouses**  
+- 🏢 **Department of Veterans Affairs Medical Centers**  
+- 🏛️ **State Capitol Buildings & City Halls**  
+- 🏢 **IRS and Social Security Administration Offices**  
+- 🏛️ **Environmental Protection Agency (EPA) Facilities**  
+- 🏢 **GSA-Managed Federal Office Buildings**  
+- 🏢 **Multi-Tower Corporate Headquarters & Financial Institutions**  
 
-- 🌟 **Over 50,000 HVAC Systems Cleaned Nationwide**
-- 📍 **Active in 30+ Major States – and expanding fast**
-- 🏆 **Top-rated NADCA-Certified Crews in the U.S.**
-- 🏢 **Trusted by Government Agencies, Hospitals & Fortune 500 Companies**
-- ⭐ **98% Customer Satisfaction & 5-Star Service Ratings**
+---
 
-This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
-
-**Book your service today** and be part of the cleanest success story in America!
+## 🛠️ Ready to bring this level of professionalism to your building?
+**Book your inspection today** and join the ranks of America’s most trusted institutions.
 
     `,
     Button: "Book Now!",
@@ -59,7 +60,7 @@ This isn’t just duct cleaning — **It’s a nationwide clean air movement.**
 
 const NewsSlider = () => {
   return (
-    <div className="xl:px-20 bg-base-200">
+    <div className="xl:px-20 pt-10 bg-base-200">
       <Swiper
         navigation={true}
         pagination={{
@@ -67,7 +68,7 @@ const NewsSlider = () => {
         }}
         loop={true}
         modules={[Navigation, Pagination]}
-        className="mySwiper"
+        className="mySwipe"
       >
         {items.map((slide) => (
           <SwiperSlide>

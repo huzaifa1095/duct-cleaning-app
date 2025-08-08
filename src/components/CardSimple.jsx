@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const CardSimple = ({ Img, Title, Para }) => {
   return (
@@ -7,11 +8,13 @@ const CardSimple = ({ Img, Title, Para }) => {
       href={"/"}
       className="card cursor-pointer group bg-base-100 hover:ring-2 ring-slate-300 w-70 md:w-96 shadow-2xl shadow-blue-300"
     >
-      <figure>
-        <img
-          className="group-hover:scale-[105%] duration-200 ease-in-out"
+      <figure className="h-50">
+        <Image
+          className="group-hover:scale-[105%] duration-200 ease-in-out object-cover"
           src={Img}
-          alt="Shoes"
+          width={400}
+          height={200}
+          alt="catagory"
         />
       </figure>
       <div className="card-body">
