@@ -36,7 +36,7 @@ export default function ResidentialDuctCleaning() {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            src="https://drive.google.com/file/d/1Twj8PNdg4sujaJ5IxxFHygsJWpGLmvDe/view?usp=drive_link"
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
